@@ -75,7 +75,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         chosenLandmarkName = landmarksNames[indexPath.row]
         chosenLandmarkImage = landmarksImages[indexPath.row]
-        performSegue(withIdentifier: "toDetailsVC", sender: nil)
+       // performSegue(withIdentifier: "toDetailsVC", sender: nil)
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -92,8 +92,8 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetailsVC" {
             let destinationVC = segue.destination as! DetailsVC
-            destinationVC.selectedLandmarkName = chosenLandmarkName
-            destinationVC.selectedLandmarkImage = chosenLandmarkImage
+          //  destinationVC.selectedLandmarkName = chosenLandmarkName
+          //  destinationVC.selectedLandmarkImage = chosenLandmarkImage
         }
     }
 }
