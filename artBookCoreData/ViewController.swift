@@ -38,7 +38,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     @objc func getData(){
-        
         nameArray.removeAll(keepingCapacity: false)
         idArray.removeAll(keepingCapacity: false)
         

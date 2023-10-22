@@ -16,7 +16,6 @@ class Calculator {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }*/
-
     @IBAction func sum(_ sender: Any) {
         let firstValue = Int(firstNum.text!)!
         let secondValue = Int(secondNum.text!)!
