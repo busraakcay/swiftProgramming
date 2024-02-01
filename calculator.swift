@@ -47,6 +47,5 @@ class Calculator {
         let div = Int(firstValue!) / Int(secondValue!)
         result.text = String(div)
     }
-    
 }
 
